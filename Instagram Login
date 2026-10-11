@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Login </title>
+  <style>
+    body {
+      background: #fafafa;
+      font-family: Arial, sans-serif;
+      display: grid;
+      place-items: center;
+      min-height: 90vh;
+    }
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 30px 24px;
+      width: 280px;
+      text-align: center;
+    }
+    h1 {
+      font-family: cursive;
+      font-size: 36px;
+    }
+    input, button {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 12px;
+      margin: 6px 0;
+    }
+    input { border: 1px solid #ddd; }
+    button {
+      background: #0095f6;
+      color: white;
+      border: 0;
+      border-radius: 5px;
+    }
+    a { color: #00376b; font-size: 14px; }
+    #message { font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Instagram</h1>
+    <p> login — practice only</p>
+    <form id
+      <input placeholder=" username" required>
+      <input type="password" placeholder=" password"
+             required>
+      <button type="submit">Log in to </button>
+    </form>
+    <p id="message"></p>
+    <p><a href="#" id="register">Create  account</a></p>
+    <p><a href="#" id="forgot">Forgot password?</a></p>
+  </main>
+  <script>
+    const message = document.getElementById("message");
+    document.getElementById(
+
+
+
+.onsubmit = function(e) {
+      e.preventDefault();
+      message.textContent =
+        "Demo successful! No credentials were saved or sent.";
+      this.reset();
+    };
+    document.getElementById("register").onclick = function(e) {
+      e.preventDefault();
+      message.textContent =
+        "Registration  selected. No account was created.";
+    };
+    document.getElementById("forgot").onclick = function(e) {
+      e.preventDefault();
+      message.textContent =
+        "Password recovery  selected. No password was changed.";
+    };
+  </script>
+</body>
+</html>
